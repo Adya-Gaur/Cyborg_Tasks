@@ -77,7 +77,7 @@ def map_arena():
     if ids is not None:
         for i, marker_id in enumerate(ids.flatten()):
             if marker_id == 1:
-                c = corners[i][0]   # shape (4, 2)
+                c = corners[i][0] 
                 cx = int(np.mean(c[:, 0]))
                 cy = int(np.mean(c[:, 1]))
                 result["robot_pixel_coord"] = [cx, cy]
